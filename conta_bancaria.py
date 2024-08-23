@@ -1,8 +1,8 @@
 class ContaBancaria:
     def __init__(self, titular, senha):
-        self.titular = titular
-        self.__saldo = 0
-        self.__senha = senha
+        self.titular = titular  # Atributo público e obrigatório
+        self.__saldo = 0        # Atributo privado inicializado com 0
+        self.__senha = senha    # Atributo privado e obrigatório
 
     def consultar_saldo(self, senha):
         if self.validar_senha(senha):
